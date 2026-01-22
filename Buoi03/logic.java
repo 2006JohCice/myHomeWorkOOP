@@ -1,5 +1,6 @@
 package learnDH14C4.myHomworkOop.Buoi03;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class logic {
@@ -25,6 +26,7 @@ public class logic {
         }
 
     }
+
     static void bai16(){
         System.out.println("Bai 16: Ctr tra lai tien cho khach");
         System.out.println("Nhap Vao So Tien");
@@ -82,6 +84,66 @@ public class logic {
             default:
                 System.out.println("Undifile");
         }
+    }
+    static void bai21(){
+        System.out.println("Bai 21 : Sum 1+1/2+1/3+...+1/n");
+        System.out.println("Nhap n");
+        int n = sc.nextInt();
+        float sum =0;
+        for (int i = 1; i <=n ; i++) {
+            sum+=(float) 1/i;
+        }
+        System.out.print("Ket Qua: ");
+        System.out.println(sum);
+    }
+    static void bai22To26(){
+        System.out.println("Khong co bai tap lam");
+    }
+    static void bai27(){
+        System.out.println("Nhap vao n de tinh tong so nguyen to [1 -> n]");
+        int n = sc.nextInt() , sum = 0 , count =0;
+        for (int i = 0; i <=Math.sqrt(n) ; i++) {
+            if (SoNguyento.ktraSont2(i) == 1){
+                count +=1;
+                sum+=i;
+            }
+        }
+        System.out.println("Tong so nguyen to ");
+        System.out.println(sum);
+        System.out.printf("Co %d so nt tu 1 -> %d",count,n);
+
+    }
+    static void bai28(
+
+
+    ){
+
+    }
+    static void bai29(){
+        System.out.println("Bai 29: Viet ctr dao nguoc mang ");
+        System.out.println("Nhap vao so luong mang");
+        int n = sc.nextInt();
+        int []a = new int[n];
+        for (int i = 0; i < n; i++) {
+            System.out.printf("Phan tu a[%d] : ",i);
+            a[i] = sc.nextInt();
+        }
+        int i = 0 , j = n -1;
+        while (i<=j){
+            int temp = a[i];
+            a[i] = a[j];
+            a[j] = temp;
+            i++;
+            j--;
+
+        }
+
+
+        for (int x : a) {
+            System.out.print(x + " ");
+        }
+
+        System.out.println("Danh gia thuat toan: giam vong lap di khi dung two point");
     }
     static void bai30(){
         // 1+2+3+4 .... = n(n+1)/2 > 1000 => x^2+x-1000 > 0

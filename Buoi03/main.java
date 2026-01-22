@@ -15,15 +15,21 @@ public class main {
                     logic.bai19();break;
                 case 20:
                     logic.bai20();break;
-                case 21: break;
-                case 22: break;
-                case 23: break;
-                case 24: break;
-                case 25: break;
-                case 26: break;
-                case 27: break;
+                case 21:
+                    logic.bai21();break;
+                case 22:
+                    logic.bai22To26();break;
+                case 23:
+                    logic.bai22To26();break;
+                case 24:
+                    logic.bai22To26();break;
+                case 25:
+                    logic.bai22To26();break;
+                case 26:
+                    logic.bai22To26();break;
+                case 27: logic.bai27();break;
                 case 28: break;
-                case 29: break;
+                case 29: logic.bai29(); break;
                 case 30:logic.bai30(); break;
             }
     }
