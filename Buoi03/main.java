@@ -27,10 +27,14 @@ public class main {
                     logic.bai22To26();break;
                 case 26:
                     logic.bai22To26();break;
-                case 27: logic.bai27();break;
-                case 28: break;
-                case 29: logic.bai29(); break;
-                case 30:logic.bai30(); break;
+                case 27:
+                    logic.bai27();break;
+                case 28:
+                    logic.bai28(); break;
+                case 29:
+                    logic.bai29(); break;
+                case 30:
+                    logic.bai30(); break;
             }
     }
     static void main() {

@@ -1,5 +1,7 @@
 package learnDH14C4.myHomworkOop.Buoi03;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
@@ -102,7 +104,7 @@ public class logic {
     static void bai27(){
         System.out.println("Nhap vao n de tinh tong so nguyen to [1 -> n]");
         int n = sc.nextInt() , sum = 0 , count =0;
-        for (int i = 0; i <=Math.sqrt(n) ; i++) {
+        for (int i = 0; i <=n ; i++) {
             if (SoNguyento.ktraSont2(i) == 1){
                 count +=1;
                 sum+=i;
@@ -111,14 +113,38 @@ public class logic {
         System.out.println("Tong so nguyen to ");
         System.out.println(sum);
         System.out.printf("Co %d so nt tu 1 -> %d",count,n);
+        System.out.println();
 
     }
-    static void bai28(
+    static void bai28() {
+        System.out.println("Bai 28 : Luy Thua be nhat > 1000 la:");
+        System.out.println("1. Dung while");
+        System.out.println("2. Dung do while");
+        System.out.println("Nhap Vao Lua Tron Cua Ban");
+        int a = sc.nextInt();
+        int x = 1;
+        int n = 0;
+        switch (a){
+            case 1:
+                while (x <= 1000) {
+                    x *= 2;
+                    n++;
+                }
 
+                System.out.println("Cach 1 - while:");
+                System.out.println("2^" + n + " = " + x);
+                break;
+            case 2:
+                do {
+                    x *= 2;
+                    n++;
+                } while (x <= 1000);
 
-    ){
-
-    }
+                System.out.println("Cach 2 - do while:");
+                System.out.println("2^" + n + " = " + x);
+                break;
+        }
+        }
     static void bai29(){
         System.out.println("Bai 29: Viet ctr dao nguoc mang ");
         System.out.println("Nhap vao so luong mang");
